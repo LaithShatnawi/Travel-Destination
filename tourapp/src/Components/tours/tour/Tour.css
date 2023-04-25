@@ -1,6 +1,6 @@
 .cityCard {
-    background-color: brown;
-    border: 10px solid black;
+    background-color: #212A3E;
+    border: 2px solid black;
     width: 500px;
     height: 500px;
     margin: 20px;
@@ -9,8 +9,9 @@
     justify-content: center;
 }
 .image{
-    height: 400px;
+    height: 350px;
 }
 .cityName{
+    color: white;
     text-align: center;
 }

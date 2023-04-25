@@ -1,0 +1,19 @@
+.navBar {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  background-color: #212a3e;
+}
+.button {
+    font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+}
+.button:hover{
+    background-color: black;
+}
