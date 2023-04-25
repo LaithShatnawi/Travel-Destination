@@ -1,14 +1,13 @@
+import Tour from "./tour/Tour";
+import "../tours/Tours.css";
+const data = require('../../data/db.json')
 function Tours(props) {
     return (
         <>
-            <h2>Tours List</h2>
-            {
-                 props.list.map((element,i)=>{
-                    return(
-            <div key={i}>{element.name}<br/><img src={element.image} alt={element.name} /></div>
-            )
-                })
-            }
+            <h2 className="toursTitle">Tours List</h2>
+            <div className="cards">
+            <Tour list={data} />
+            </div>
         </>
     )
 }

@@ -1,0 +1,16 @@
+.cityCard {
+    background-color: brown;
+    border: 10px solid black;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image{
+    height: 400px;
+}
+.cityName{
+    text-align: center;
+}
