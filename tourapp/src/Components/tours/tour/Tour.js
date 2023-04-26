@@ -1,13 +1,18 @@
 import './Tour.css'
-import Button from 'react-bootstrap/Button';
+import TourDetails from '../../TourDetails/TourDetails'
 import Card from 'react-bootstrap/Card';
+import { useParams } from 'react-router-dom';
 function Tour(props) {
+    let { id } = useParams(props.cityId);
+    let showDetails = () => {
+        <TourDetails details={id} />
+    }
     return (
         <>
             {
                 props.list.map((element, i) => {
                     return (
-                        <div id={element.id}>
+                        <div onClick={showDetails} id={i}>
                             <Card className='cityCard'>
                                 <Card.Img className='image' variant="top" src={element.image} />
                                 <Card.Body>
