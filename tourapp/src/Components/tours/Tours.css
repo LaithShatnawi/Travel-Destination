@@ -1,0 +1,12 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+}
+.toursTitle{
+    font-size: 30px;
+    text-align: center;
+    margin: 0%;
+    padding: 50px;
+}

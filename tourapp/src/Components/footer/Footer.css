@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #9BA4B5;
+}
+.author{
+    color: white;
+}
+.list{
+    list-style: none;
+}
+.links{
+    color: white;
+    text-decoration: none;
+}
