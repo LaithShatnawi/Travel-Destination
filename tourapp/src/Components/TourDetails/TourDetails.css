@@ -1,0 +1,15 @@
+.btn{
+    color: white;
+    background-color: #394867;
+    margin: 3px;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+}
+#card{
+    width: 1000px;
+}
+#image{
+    height: 500px;
+}

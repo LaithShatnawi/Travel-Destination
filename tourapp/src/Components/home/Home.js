@@ -1,12 +1,8 @@
-import Footer from "../footer/Footer";
-import Header from "../header/Header";
 import Tours from "../tours/Tours";
-function Home() {
+function Home({data}) {
     return (
         <>
-            <Header />
-            <Tours />
-            <Footer />
+            <Tours data={data} />
         </>
     );
 }

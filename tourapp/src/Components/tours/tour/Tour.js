@@ -1,19 +1,15 @@
 import './Tour.css'
-import TourDetails from '../../TourDetails/TourDetails'
 import Card from 'react-bootstrap/Card';
-import { useParams } from 'react-router-dom';
-function Tour(props) {
-    let { id } = useParams(props.cityId);
-    let showDetails = () => {
-        <TourDetails details={id} />
-    }
+import { Link } from 'react-router-dom';
+function Tour({ data }) {
     return (
         <>
             {
-                props.list.map((element, i) => {
+                data.map((element) => {
                     return (
-                        <div onClick={showDetails} id={i}>
-                            <Card className='cityCard'>
+                        <Link to={`/city/${element.id}`} key={element.id} className='link'>
+
+                            <Card className='cityCard' >
                                 <Card.Img className='image' variant="top" src={element.image} />
                                 <Card.Body>
                                     <Card.Title className='cityName'><h3>{element.name}</h3></Card.Title>
@@ -23,7 +19,7 @@ function Tour(props) {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
-                        </div>
+                        </Link>
                     )
                 })
             }
